@@ -9,7 +9,9 @@ Welcome to the Delivery Service project! This Java application implements a flex
 5. [Observer](#Observer)
 6. [Adapter](#Adapter)
 7. [Main Class](#Main)
-8. [UML Diagram](#UML)
+
+## UML
+![UML](UML.png)
 
 ## Singleton
 The `User` class is implemented as a Singleton, ensuring that there is only one instance of the user throughout the application's lifecycle.
@@ -108,6 +110,3 @@ public class Main {
     }
 }
 ```
-
-## UML
-![UML](UML.png)
