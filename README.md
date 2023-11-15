@@ -8,6 +8,8 @@ Welcome to the Delivery Service project! This Java application implements a flex
 4. [Decorator](#Decorator)
 5. [Observer](#Observer)
 6. [Adapter](#Adapter)
+7. [Main Class](#Main)
+8. [UML Diagram](#UML)
 
 ## Singleton
 The User class is implemented as a Singleton, ensuring that there is only one instance of the user throughout the application's lifecycle.
@@ -57,7 +59,7 @@ DeliveryStrategy shipAdapter = new ShipAdapter(ship);
 shipAdapter.delivery();
 ```
 
-## Main Class
+## Main
 The Main class serves as the entry point to the application. It demonstrates the use of the implemented design patterns by creating instances of the classes and showcasing their interactions.
 ```java
 import Adapter.Ship;
@@ -105,5 +107,7 @@ public class Main {
 
     }
 }
-
 ```
+
+## UML
+![UML](https://github.com/toriowtf/sdpfinal/edit/master/UML.png)
