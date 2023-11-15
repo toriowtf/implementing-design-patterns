@@ -1,16 +1,16 @@
 # Delivery Service
 
-Welcome to the Delivery Service project! 
+This Java project showcases the implementation of various design patterns to create a flexible and extensible delivery service. The primary design patterns utilized include Singleton, Strategy, Factory, Decorator, Observer, and Adapter.
 
-This Java application implements a flexible delivery system using various design patterns. 
+## Project Focus
 
-This Java project implements a delivery system using various design patterns: [Singleton](https://github.com/toriowtf/sdpfinal/tree/master/Singleton), [Strategy](https://github.com/toriowtf/sdpfinal/tree/master/Strategy), [Factory](https://github.com/toriowtf/sdpfinal/tree/master/Factory), [Decorator](https://github.com/toriowtf/sdpfinal/tree/master/Decorator), [Observer](https://github.com/toriowtf/sdpfinal/tree/master/Observer), and [Adapter](https://github.com/toriowtf/sdpfinal/tree/master/Adapter).
+The project focuses on creating a flexible and maintainable delivery service by leveraging various design patterns. From managing user instances to executing dynamic delivery strategies, each pattern addresses specific concerns, contributing to the overall modularity and scalability of the code.
 
 ## UML Diagram
 
 ![UML](UML.png)
 
-## Table of Contents
+## Objectives
 
 * [Singleton](#Singleton)
 * [Strategy](#Strategy)
