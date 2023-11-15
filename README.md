@@ -13,7 +13,6 @@ Welcome to the Delivery Service project! This Java application implements a flex
 The User class is implemented as a Singleton, ensuring that there is only one instance of the user throughout the application's lifecycle.
 ```java
 User user = User.getInstance("assan");
-System.out.println("Welcome, " + User.name.toUpperCase() + ".");
 ```
 
 ## Strategy
