@@ -1,5 +1,5 @@
 # Delivery Service
-Welcome to the Delivery Service project! This Java application implements a flexible delivery system using various design patterns. This Java project implements a delivery system using various design patterns: [Singleton](https://github.com/toriowtf/sdpfinal/tree/master/Singleton), [Strategy](https://github.com/toriowtf/sdpfinal/tree/master/Strategy), [Factory](https://github.com/toriowtf/sdpfinal/tree/master/Factory), [Decorator](https://github.com/toriowtf/sdpfinal/tree/master/Decorator), [Observer](https://github.com/toriowtf/sdpfinal/tree/master/Observer), and [Adapter](https://github.com/toriowtf/sdpfinal/tree/master/Adapter).
+`Welcome to the Delivery Service project! This Java application implements a flexible delivery system using various design patterns. This Java project implements a delivery system using various design patterns: [Singleton](https://github.com/toriowtf/sdpfinal/tree/master/Singleton), [Strategy](https://github.com/toriowtf/sdpfinal/tree/master/Strategy), [Factory](https://github.com/toriowtf/sdpfinal/tree/master/Factory), [Decorator](https://github.com/toriowtf/sdpfinal/tree/master/Decorator), [Observer](https://github.com/toriowtf/sdpfinal/tree/master/Observer), and [Adapter](https://github.com/toriowtf/sdpfinal/tree/master/Adapter).`
 
 ## UML Diagram
 ![UML](UML.png)
