@@ -3,10 +3,10 @@ This Java project implements a delivery system using various design patterns. Th
 
 ## Table of Contents
 1. [Singleton](#Singleton)
-2. [Strategy](https://github.com/toriowtf/sdpfinal/tree/master/Strategy)
-3. [Factory](https://github.com/toriowtf/sdpfinal/tree/master/Factory)
-4. [Decorator](https://github.com/toriowtf/sdpfinal/tree/master/Decorator)
-5. [Observer](https://github.com/toriowtf/sdpfinal/tree/master/Observer)
+2. [Strategy](#Strategy)
+3. [Factory](#Factory)
+4. [Decorator](#Decorator)
+5. [Observer](#Observer)
 6. [Adapter](#Adapter)
 
 ## Singleton
@@ -29,3 +29,51 @@ The Adapter pattern is utilized with the ShipAdapter class, allowing the Ship cl
 
 ## Main Class
 The Main class serves as the entry point to the application. It demonstrates the use of the implemented design patterns by creating instances of the classes and showcasing their interactions.
+```java
+import Adapter.Ship;
+import Adapter.ShipAdapter;
+import Decorator.*;
+import Factory.*;
+import Observer.*;
+import Singleton.*;
+import Strategy.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        //Singleton
+        User user = User.getInstance("assan");
+        System.out.println("Welcome, " + User.name.toUpperCase() + ".");
+
+        //Strategy
+        DeliveryContext strategy = new DeliveryContext();
+        strategy.setDeliveryStrategy(new TrainDelivery());
+        strategy.executeDelivery();
+
+        //Factory
+        TransportDialog trainDialog = new TrainDialog();
+        TransportFactory train = trainDialog.createVehicle();
+        train.orderVehicle();
+
+        //Decorator
+        DeliveryUpgrades basicDelivery = new DefaultDelivery();
+        DeliveryUpgrades giftWrapDelivery = new GiftWrapDecorator(basicDelivery);
+        DeliveryUpgrades expressGiftWrapDelivery = new ExpressDeliveryDecorator(giftWrapDelivery);
+        expressGiftWrapDelivery.deliver("Wolf St.");
+
+        //Observer
+        DeliveryStatus deliveryStatus = new DeliveryStatus();
+        Customer customer = new Customer(User.name);
+        deliveryStatus.addObserver(customer);
+        deliveryStatus.setStatus("Package is being shipped");
+
+        //Adapter
+        Ship ship = new Ship();
+        DeliveryStrategy shipAdapter = new ShipAdapter(ship);
+        shipAdapter.delivery();
+
+    }
+}
+
+```
