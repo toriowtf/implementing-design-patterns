@@ -6,6 +6,10 @@ This Java project showcases the implementation of various design patterns to cre
 
 The project focuses on creating a flexible and maintainable delivery service by leveraging various design patterns. From managing user instances to executing dynamic delivery strategies, each pattern addresses specific concerns, contributing to the overall modularity and scalability of the code.
 
+## Purpose of the Work
+* __Design Patterns Exploration:__ The project serves as an educational resource for understanding and implementing essential design patterns in Java.
+* __Delivery System Simulation:__ The code mimics a simplified delivery service, showcasing how design patterns contribute to the modularity, scalability, and maintainability of the codebase.
+
 ## UML Diagram
 
 ![UML](UML.png)
