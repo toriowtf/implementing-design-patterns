@@ -89,15 +89,6 @@ shipAdapter.delivery();
 The `Main` class serves as the entry point to the application. It demonstrates the use of the implemented design patterns by creating instances of the classes and showcasing their interactions.
 
 ```java
-import Adapter.Ship;
-import Adapter.ShipAdapter;
-import Decorator.*;
-import Factory.*;
-import Observer.*;
-import Singleton.*;
-import Strategy.*;
-
-
 public class Main {
     public static void main(String[] args) {
 
