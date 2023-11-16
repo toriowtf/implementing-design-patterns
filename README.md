@@ -1,4 +1,4 @@
-# 🚚Delivery Service📦
+# <span style='color: red;'>Delivery Service</span>🚚
 
 This Java project showcases the implementation of various design patterns to create a flexible and extensible delivery service. The primary design patterns utilized include Singleton, Strategy, Factory, Decorator, Observer, and Adapter.
 
