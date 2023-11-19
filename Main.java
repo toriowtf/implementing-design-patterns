@@ -1,5 +1,4 @@
-import Adapter.Ship;
-import Adapter.ShipAdapter;
+import Adapter.*;
 import Decorator.*;
 import Factory.*;
 import Observer.*;
@@ -31,10 +30,10 @@ public class Main {
         expressGiftWrapDelivery.deliver("Wolf St.");
 
         //Observer
-        DeliveryStatus deliveryStatus = new DeliveryStatus();
+        DeliveryManager deliveryManager = new DeliveryManager();
         Customer customer = new Customer(User.name);
-        deliveryStatus.addObserver(customer);
-        deliveryStatus.setStatus("Package is being shipped");
+        deliveryManager.addObserver(customer);
+        deliveryManager.setStatus("Package is being shipped");
 
         //Adapter
         Ship ship = new Ship();
