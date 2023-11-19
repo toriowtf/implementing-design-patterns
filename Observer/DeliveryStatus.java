@@ -1,7 +1,7 @@
 package Observer;
 import java.util.ArrayList;
 import java.util.List;
-public class DeliveryStatus {
+public class DeliveryManager {
     private List<DeliveryObserver> observers = new ArrayList<>();
     private String status;
 
