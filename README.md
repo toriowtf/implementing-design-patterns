@@ -65,13 +65,13 @@ expressGiftWrapDelivery.deliver("Wolf St.");
 
 ## Observer
 
-The Observer pattern is implemented for tracking the delivery status. `DeliveryStatus` maintains a list of observers (in this case, customers) and notifies them when the status changes.
+The Observer pattern is implemented for tracking the delivery status. `DeliveryManager` maintains a list of observers (in this case, customers) and notifies them when the status changes.
 
 ```java
-DeliveryStatus deliveryStatus = new DeliveryStatus();
+DeliveryManager deliveryManager = new DeliveryManager();
 Customer customer = new Customer(User.name);
-deliveryStatus.addObserver(customer);
-deliveryStatus.setStatus("Package is being shipped");
+deliveryManager.addObserver(customer);
+deliveryManager.setStatus("Package is being shipped");
 ```
 
 ## Adapter
